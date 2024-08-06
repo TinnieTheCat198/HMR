@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.navLinks li a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    border-right: black solid 1px;
+    padding-right: 1rem;
+}
+
+.navLinks li a:hover {
+    color: #424242; /* Change color on hover */
+}
+
+.navLinks li a:focus {
+  color: #CE1489;
+}
+
+#logoHeader {
+  min-width: 4rem;
+  width: 8%;
+  height: auto;
+}
