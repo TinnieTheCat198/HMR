@@ -1,0 +1,43 @@
+.container {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 5% 10%;
+    width: 40%;
+    margin: 3% auto 10%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container form input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* resize: vertical; */
+    margin-bottom: 1.5rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container form input[type=text]:focus, textarea:focus, select:focus {
+    border: 2px solid #F0A8D0;
+}
+
+.container form textarea {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    height: 200px;
+}
+
+.container input[type=submit] {
+    background-color: #CE1489;
+    padding: 12px 24px;
+    font-size: medium;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+

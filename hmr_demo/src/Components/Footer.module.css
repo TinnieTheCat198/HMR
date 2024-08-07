@@ -1,12 +1,9 @@
 .footer {
     display: flex;
-    position: fixed; /* Fixes the footer at the bottom */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
     background-color: #fff;
-    max-height: 45%;
+    max-height: 30%;
     padding: 2rem;
 }
 

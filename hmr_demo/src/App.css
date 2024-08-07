@@ -1,12 +1,12 @@
 #root {
   display: flex;
   flex-direction: column;
-
-  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  background-color: #FFD1E8;
+  background-color: #FFFFFF;
+  justify-content: stretch;
 }
 
 .logo {

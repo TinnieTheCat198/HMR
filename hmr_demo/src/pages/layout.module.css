@@ -5,14 +5,20 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #fff;
   padding: 0rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  box-sizing: border-box;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
+  width: 100%;
+  min-width: 500px;
 }
 
 .navLinks {
@@ -25,6 +31,7 @@
 .navLinks li a {
     color: #333333;
     text-decoration: none;
+    text-wrap: nowrap;
     font-size: 1rem;
     transition: color 0.3s;
     border-right: black solid 1px;
