@@ -15,6 +15,13 @@ const AppointmentForm = () => {
     const [phoneNum, setPhoneNum] = useState("");
     const [date, setDate] = useState(false);
 
+    const formatDateToString = (date) => {
+        const day = date.getDate().toString().padStart(2, '0');
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    };
+
     function alertMessage(mess) {
         alert(mess);
     }
@@ -27,14 +34,15 @@ const AppointmentForm = () => {
         e.preventDefault();
         const appointmentForm = {
             Branch: branch,
-            Date: date,
+            Date: formatDateToString(date),
             Name: name,
-            Phone: phoneNum
+            Phone: "'" + phoneNum
         }
         setBranch("");
         setDate(false);
         setName("");
         setPhoneNum("");
+        console.log(appointmentForm);
         axios.post('https://sheet.best/api/sheets/dd30655c-e83a-4a22-80dc-e69c849ea3d1', appointmentForm).then(response=>{
             console.log(response)
         })
