@@ -1,0 +1,88 @@
+.main {
+    margin-top: 100px;
+    flex: 1;
+    position: relative;
+    z-index: 0;
+}
+
+.section1, .section2 {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.section1 {
+    background-color: #FFD1E8;
+}
+
+.section2 {
+    flex-direction: column;
+    padding: 0px 10%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.card {
+    width: 12rem;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.card h3 {
+    margin-top: 5px;
+}
+
+.card p {
+    margin: 0 auto;
+}
+
+.card img {
+    width: 8rem;
+    height: auto;
+}
+
+.image {
+    max-width: 10rem;
+    height: auto;
+}
+
+.section2 h2 {
+    border-bottom: #008080 5px solid;
+}
+
+.section1 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.section1 div:last-child {
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 10%;
+    background-color: #FFD1E8;
+}
+
+.section1 img {
+    width: 40%;
+}
+
+.section1 button {
+    background-color: #008080;
+    color: white;
+}
+
+.main p {
+    text-align: justify;
+}

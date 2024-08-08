@@ -1,0 +1,16 @@
+.container {
+    /* background-color: #008080; */
+    padding: 10px;
+    padding-top: 5px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.container h2 {
+    color: #008080;
+}
+
+.phoneNumber {
+    font-weight: 400;
+    color: blue;
+}

@@ -3,8 +3,7 @@ import "./Modal.css";
 
 import close_icon from "../assets/close.svg"
 
-export default function Modal({id, children, title, children1}) {
-    const [modal, setModal] = useState(false);
+export default function Modal({modal, setModal, id, children, title, children1}) {
   
     const toggleModal = () => {
       setModal(!modal);

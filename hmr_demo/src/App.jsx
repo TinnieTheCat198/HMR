@@ -12,17 +12,21 @@ import NoPage from "./pages/NoPage";
 import FloatingContact from './Components/FloatingContact';
 import Modal from './Components/Modal';
 import AppointmentForm from './Components/AppointmentForm';
+import HotLineForm from './Components/HotLineForm';
 
 import appointment_icon from './assets/appointment.svg'
 import phone_icon from './assets/phone.svg'
+import { useState } from 'react';
 
 const App = () => {
+    const [appointment,setAppointment] = useState(false);
+    const [contact,setContactt] = useState(false);
   return (
     <>
         <BrowserRouter>
         <Routes>
             <Route path="/" element={<Layout />}>
-            <Route index element={<Home />}/>
+            <Route index element={<Home appointment={appointment} setAppointment={setAppointment}/>}/>
             <Route path="gioi-thieu" element={<Introduction/>}/>
             <Route path="benh-dieu-tri" element={<Sickness />} />
             <Route path="phuong-phap-dieu-tri" element={<CureMethods/>} />
@@ -33,14 +37,14 @@ const App = () => {
         </Routes>
         </BrowserRouter>
         <div className='floating-contact-container'>
-            <Modal>
-            <FloatingContact
-                id="phone" 
-                icon={phone_icon}
-            />
+            <Modal modal={contact} setModal={setContactt} children1={<HotLineForm/>}>
+                <FloatingContact
+                    id="phone" 
+                    icon={phone_icon}
+                />
             </Modal>
 
-            <Modal title="ĐẶT HẸN" id="appointment-title" children1={<AppointmentForm/>}>
+            <Modal modal={appointment} setModal={setAppointment} title="ĐẶT HẸN" id="appointment-title" children1={<AppointmentForm/>}>
             <FloatingContact 
                 id="appointment" 
                 icon={appointment_icon}
