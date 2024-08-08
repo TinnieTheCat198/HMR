@@ -44,7 +44,7 @@ const ContactForm = () => {
                         onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                 </div>
-                <input type="submit" value="Gửi" />
+                <input type="submit" value="Gửi thông tin" />
         </form>
         </div>
     )

@@ -9,9 +9,17 @@ import Contact from "./pages/Contact";
 import Layout from "./pages/Layout";
 import NoPage from "./pages/NoPage";
 
+import FloatingContact from './Components/FloatingContact';
+import Modal from './Components/Modal';
+import AppointmentForm from './Components/AppointmentForm';
+
+import appointment_icon from './assets/appointment.svg'
+import phone_icon from './assets/phone.svg'
+
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
+        <BrowserRouter>
         <Routes>
             <Route path="/" element={<Layout />}>
             <Route index element={<Home />}/>
@@ -23,7 +31,27 @@ const App = () => {
             <Route path="*" element={<NoPage />} />
             </Route>
         </Routes>
-    </BrowserRouter>
+        </BrowserRouter>
+        <div className='floating-contact-container'>
+            <Modal>
+            <FloatingContact
+                id="phone" 
+                icon={phone_icon}
+            />
+            </Modal>
+
+            <Modal title="ĐẶT HẸN" id="appointment-title" children1={<AppointmentForm/>}>
+            <FloatingContact 
+                id="appointment" 
+                icon={appointment_icon}
+                
+            />
+            </Modal>
+            
+            
+        </div>
+    </>
+    
 );
 }
 

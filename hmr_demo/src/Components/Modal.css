@@ -1,0 +1,70 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    /* padding: 10px 20px; */
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.btn-modal:hover {
+    border-color: transparent;
+    transform: scale(1.1);
+}
+
+.title {
+    font-weight: bold;
+}
+
+#appointment-title {
+    background-color: transparent;
+    color:#CE1489;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.modal {
+    overflow-y: scroll;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 10px;
+    max-width: 600px;
+    min-width: 300px;
+    overflow-y: visible;
+}
+
+.close-modal {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 3px;
+    background-color: transparent;
+}

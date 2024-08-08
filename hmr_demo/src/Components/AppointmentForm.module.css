@@ -1,10 +1,22 @@
 .container {
     border-radius: 10px;
-    background-color: #ffffff;
-    padding: 5% 10%;
-    width: 40%;
+    background-color: transparent;
+    padding: 20px 10%;
+    width: 100%;
     margin: 3% auto 10%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: border-box;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.container img {
+    height: 175px;
+    width: auto;
 }
 
 .container form input[type=text], select, textarea {
@@ -39,4 +51,34 @@
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.container p {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.container h2 {
+    text-align: left;
+    color: #CE1489;
+    margin-bottom: 0px;
+}
+
+.container .col-50 {
+    width: 50%;
+}
+
+.container input[type=submit] {
+    align-self: center;
+    margin-top: 30px;
+    background-color: #008080;
+    font-size: larger;
 }
