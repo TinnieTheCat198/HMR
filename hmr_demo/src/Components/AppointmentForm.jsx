@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from 'axios'
 import DatePicker from "react-datepicker";
 
 import styles from "./AppointmentForm.module.css"
@@ -13,6 +14,31 @@ const AppointmentForm = () => {
     const [name, setName] = useState("");
     const [phoneNum, setPhoneNum] = useState("");
     const [date, setDate] = useState(false);
+
+    function alertMessage(mess) {
+        alert(mess);
+    }
+
+    function checkInput(...props){
+
+    }
+
+    function submitForm(e){
+        e.preventDefault();
+        const appointmentForm = {
+            Branch: branch,
+            Date: date,
+            Name: name,
+            Phone: phoneNum
+        }
+        setBranch("");
+        setDate(false);
+        setName("");
+        setPhoneNum("");
+        axios.post('https://sheet.best/api/sheets/dd30655c-e83a-4a22-80dc-e69c849ea3d1', appointmentForm).then(response=>{
+            console.log(response)
+        })
+    }
     
     return (
         <div className={styles.container}>
@@ -24,8 +50,8 @@ const AppointmentForm = () => {
                 </div>
                 <img src={appointment_img}/>
             </div>
-            <form>
-                    <select onChange={(e) => setBranch(e.target.value)}>
+            <form className="form" onSubmit={(e)=>submitForm(e)}>
+                    <select name="Branch" value={branch} onChange={(e) => e.target.value == "Chọn cơ sở"? setBranch("") : setBranch(e.target.value)}>
                         {BRANCH.map( (b,index) => 
                             {return (
                             <option value={index}>{b}</option>
@@ -36,15 +62,18 @@ const AppointmentForm = () => {
                         placeholderText="Chọn ngày đặt hẹn"
                         selected={date} 
                         onChange={(date) => setDate(date)} 
+                        name="AppointmentDate"
                     />
                     <input
                         type="text"
+                        name="Name"
                         value={name}
                         placeholder="Họ Tên"
                         onChange={(e) => setName(e.target.value)}
                     />
                     <input
                         type="text"
+                        name="PhoneNumber"
                         value={phoneNum}
                         placeholder="Số điện thoại"
                         onChange={(e) => setPhoneNum(e.target.value)}
