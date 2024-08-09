@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import Dropdown from './Dropdown';
 import './MenuItems.css'
@@ -12,7 +13,7 @@ const MenuItems = ({ items }) => {
     <li className="menu-items main-items">
       {items.submenu ? (
         <>
-          <Link to={items.url}>{items.title}</Link>
+          <HashLink to={items.url}>{items.title}</HashLink>
           <Dropdown submenus={items.submenu} dropdown={dropdown}/>
         </>
       ) : (

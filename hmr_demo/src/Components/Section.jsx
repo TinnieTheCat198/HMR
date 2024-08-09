@@ -1,8 +1,8 @@
 import styles from './Section.module.css'
 
-const Section = ({title,children}) => {
+const Section = ({id,title,children}) => {
     return (
-        <div className={styles.container}>
+        <div id={id} className={styles.container}>
             {title && <h2>{title}</h2>}
             {children}
         </div>

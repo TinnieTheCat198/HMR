@@ -4,7 +4,6 @@ const DoctorAdvice = () => {
     return (
         <>
             <h1>Bác sĩ khuyên dùng</h1>
-            <Footer/>
         </>
         
     )

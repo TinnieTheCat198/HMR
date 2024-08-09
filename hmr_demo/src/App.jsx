@@ -18,6 +18,8 @@ import Header from './Components/Header';
 import appointment_icon from './assets/appointment.svg'
 import phone_icon from './assets/phone.svg'
 import { useState } from 'react';
+import DauVaiGay from './pages/DauVaiGay';
+import SicknessHome from './pages/SicknessHome';
 
 // const router = createBrowserRouter([
 //     {
@@ -74,7 +76,10 @@ const App = () => {
             <Route path="/" element={<Layout />}>
             <Route index element={<Home appointment={appointment} setAppointment={setAppointment}/>}/>
             <Route path="gioi-thieu" element={<Introduction/>}/>
-            <Route path="benh-dieu-tri" element={<Sickness />} />
+            <Route path="benh-dieu-tri" element={<SicknessHome />}>
+                <Route index element={<Sickness/>}></Route>
+                <Route path="dau-vai-gay" element={<DauVaiGay />}/>
+            </Route>
             <Route path="phuong-phap-dieu-tri" element={<CureMethods/>} />
             <Route path="bac-si-khuyen-dung" element={<DoctorAdvice/>} />
             <Route path="lien-he" element={<Contact/>} />

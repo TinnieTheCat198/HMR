@@ -4,7 +4,7 @@ const CureMethods = () => {
     return (
         <>
             <h1>Phương pháp điều trị</h1>
-            <Footer/>
+            
         </>
         
     )

@@ -9,15 +9,15 @@ export const menuItemsData = [
       submenu: [
         {
           title: 'Về chúng tôi',
-          url: 've-chung-toi',
+          url: '/gioi-thieu#ve-chung-toi',
         },
         {
           title: 'Giới thiệu về bác sĩ',
-          url: 'bac-si',
+          url: '/gioi-thieu#bac-si',
         },
         {
           title: 'Danh sách phòng khám',
-          url: 'danh-sach-phong-kham',
+          url: '/gioi-thieu#danh-sach-phong-kham',
         },
       ],
     },
@@ -27,19 +27,22 @@ export const menuItemsData = [
       submenu: [
         {
           title: 'Phục hồi chức năng - Vật lý trị liệu - Hiệu chỉnh cơ xương khớp',
-          url: 'co-xuong-khop',
+          url: '/benh-dieu-tri#co-xuong-khop',
+          submenu: [
+
+          ]
         },
         {
           title: 'Phục hồi chức năng Sản phụ khoa - Nam khoa',
-          url: 'san-phu-nam-khoa',
+          url: '/benh-dieu-tri#san-phu-nam-khoa',
         },
         {
           title: 'Phục hồi chức năng Nhi khoa',
-          url: 'nhi-khoa-khac-dot-quy',
+          url: '/benh-dieu-tri#nhi-khoa-khac-dot-quy',
         },
         {
           title: 'Phục hồi chức năng sau tai biến',
-          url: 'sau-tai-bien',
+          url: '/benh-dieu-tri#sau-tai-bien',
         },
       ],
     },

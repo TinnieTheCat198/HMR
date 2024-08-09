@@ -87,7 +87,6 @@ const Contact = () => {
                 HMR sẽ liên hệ hỗ trợ bạn trong thời gian sớm nhất</p>
             <ContactForm/>
             <MyMap/>
-            <Footer/>
         </div>
         
     )

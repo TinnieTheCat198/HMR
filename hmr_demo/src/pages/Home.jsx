@@ -41,12 +41,10 @@ const Home = ({appointment, setAppointment}) => {
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
                                 </div>
                             )})
-                        }
-                        
+                        }   
                     </div>
                 </div>
             </Section>
-            <Footer/>
         </div>
     )
 }

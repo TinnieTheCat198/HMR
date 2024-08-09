@@ -1,0 +1,11 @@
+.container {
+    padding: 2% 15%;
+}
+
+.post {
+    text-align: justify;
+}
+
+.post ul {
+    list-style-type: square;
+}
