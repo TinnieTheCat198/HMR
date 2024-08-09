@@ -11,9 +11,24 @@
     font-size: 0.875 rem;
     z-index: 9999;
     min-width: 10rem;
-    padding: 0.8rem 0.8rem;
+    padding: 0.15em 0.15em;
+    /* margin-top: 1rem; */
     list-style: none;
     background-color: white;
-    border-radius: 0.2rem;
+    border-radius: 0.5em;
     display: none;
+}
+
+.dropdown .menu-items {
+    text-align: left;
+    padding: 0.5em 1em;
+    border-bottom: 0.2px lightgray solid;
+}
+
+.dropdown .menu-items a {
+    color: gray;
+}
+
+.dropdown .menu-items:hover {
+    background-color: #FFD1E8;
 }

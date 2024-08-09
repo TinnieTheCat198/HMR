@@ -9,11 +9,14 @@ import avatar from '../assets/avatar.svg'
 
 const nums = [1,2,3,4,5];
 
+const section1Cards = ['Bệnh điều trị', 'Tìm Bác Sĩ', 'Đặt hẹn khám bệnh', 'Hỏi đáp'];
+
 const Home = ({appointment, setAppointment}) => {
+
     return (
         <div className={styles.main}>
             <HomeSlide1/>
-            <Section>
+            <Section title='Chăm Sóc Sức Khỏe Ngay Trong Tầm Tay'>
                 <div className={styles.section1}>
                     <div><img src={logo}></img></div>
                     <div>

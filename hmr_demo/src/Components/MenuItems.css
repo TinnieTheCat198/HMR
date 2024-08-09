@@ -2,7 +2,17 @@
     text-wrap: nowrap;
 }
 
-.menu-items button {
-    padding: 0;
+.menu-items button, li{
+    display: block;
+    align-items: center;
+    padding: 1em 0.2em;
     background-color: transparent;
+}
+
+.menu-items a:hover{
+    color: #CE1489;
+}
+
+.menu-items:hover .dropdown {
+    display: block;
 }
