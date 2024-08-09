@@ -1,8 +1,5 @@
 .main {
-    margin-top: 100px;
     flex: 1;
-    position: relative;
-    z-index: 0;
 }
 
 .section1, .section2 {

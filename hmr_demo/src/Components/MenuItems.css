@@ -1,0 +1,8 @@
+.menu-items {
+    text-wrap: nowrap;
+}
+
+.menu-items button {
+    padding: 0;
+    background-color: transparent;
+}

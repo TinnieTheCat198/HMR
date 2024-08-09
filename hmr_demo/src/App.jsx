@@ -13,10 +13,56 @@ import FloatingContact from './Components/FloatingContact';
 import Modal from './Components/Modal';
 import AppointmentForm from './Components/AppointmentForm';
 import HotLineForm from './Components/HotLineForm';
+import Header from './Components/Header';
 
 import appointment_icon from './assets/appointment.svg'
 import phone_icon from './assets/phone.svg'
 import { useState } from 'react';
+
+// const router = createBrowserRouter([
+//     {
+//       element: <Root />,
+//       errorElement: <ErrorPage />,
+//       children: [
+//         {
+//           path: "/",
+//           element: <App />,
+//         },
+//         {
+//           path: "services",
+//           element: <Services />,
+//         },
+//         {
+//           path: "about",
+//           element: <About />,
+//         },
+//         {
+//           path: "web-design",
+//           element: <WebDesign />,
+//         },
+//         {
+//           path: "web-dev",
+//           element: <WebDev />,
+//         },
+//         {
+//           path: "frontend",
+//           element: <Frontend />,
+//         },
+//         {
+//           path: "node",
+//           element: <NodeJs />,
+//         },
+//         {
+//           path: "php",
+//           element: <Php />,
+//         },
+//         {
+//           path: "seo",
+//           element: <SEO />,
+//         },
+//       ],
+//     },
+//   ]);
 
 const App = () => {
     const [appointment,setAppointment] = useState(false);
